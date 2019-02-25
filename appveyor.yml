@@ -4,9 +4,6 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}-rc1'
-environment:
-  testv: oh hi
-test_script:
-  - cmd: exit 1
-on_finish:
-  - cmd: ECHO excellent
+artifacts:
+  - path: test.zip
+    name: MyApp
