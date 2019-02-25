@@ -45,6 +45,7 @@
     <Compile Include="Library1.fs" />
     <None Include="Script.fsx" />
     <Content Include="packages.config" />
+    <None Include="appveyor.yml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
