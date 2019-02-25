@@ -8,3 +8,5 @@ environment:
   testv: oh hi
 test_script:
   - cmd: exit 1
+on_finish:
+  - cmd: ECHO excellent
