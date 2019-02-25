@@ -5,5 +5,15 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}-rc1'
 artifacts:
-  - path: appveyor-messaround\bin
-    name: MyApp
+  - path: appveyor-messaround\bin\debug
+    name: appveyor-messaround
+before_build:
+  - cmd: echo $APPVEYOR_REPO_BRANCH
+  - cmd: |
+         IF $APPVEYOR_REPO_BRANCH == test (
+             echo Yes that's right
+             echo Correct
+         )
+         IF $APPVEYOR_REPO_BRANCH == master (
+             echo It's master
+         )
