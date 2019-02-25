@@ -7,4 +7,4 @@ assembly_info:
 environment:
   testv: oh hi
 test_script:
-  - cmd: ECHO {testv}
+  - cmd: exit 1
